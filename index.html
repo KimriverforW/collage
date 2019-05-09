@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gleaming page</title>
+	<style type="text/css">
+		.wrap{width:100%; color:#A76058; margin:auto;}
+		section{width:60%; margin:0; padding:auto; padding-top:400px; position:relative;}
+		.light{width:70px; position:absolute; z-index:999; left:800px; animation: lit 20s infinite linear;}
+		@keyframes lit{
+			to{transform:rotate(360deg);}
+		}
+		.light2{width:50px; position:absolute; z-index:999; left:200px; animation: lit 10s infinite linear;}
+		@keyframes lit{
+			to{transform:rotate(360deg);}
+		}
+		.main:before{animation: back 6s infinite cubic-bezier(.1,.89,.88,.3);}
+		@keyframes tutsFade {
+ 		0% {opacity: 1;}
+  		100% {opacity: 0;}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<section>
+			<img src="lit-1" class="light">
+		</section>
+		<section>
+			<img src="lit-2" class="light2">
+		</section>
+		<section>
+			<img src="zhffkwb.JPG" class="main">
+		</section>
+	</div>
+</body>
+</html>
