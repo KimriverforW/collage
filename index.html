@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gleaming page</title>
 	<style type="text/css">
-		.wrap{width:100%; height:auto; background-color:#A76058; margin:auto;}
+		.wrap{background-size:cover; background-color:#A76058; margin:0;}
 		section{width:60%; margin:auto; padding:auto; padding-top:50px; position:relative; display:block;}
 		.light{width:300px; position:absolute;  left:800px; z-index:999; animation: lit 30s infinite linear; display:block;}
 		@keyframes lit{
@@ -17,7 +17,7 @@
 		.line1{display:block; width:100%; position:absolute; padding-top:0; z-index:8; animation: lo 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes lo{
 			from{}
-			to{transform:rotate3d(0.5,0.5,0.5,150deg);}
+			to{transform:rotate3d(0.5,0.5,0.5,270deg);}
 		}
 		.line2{display:block; width:100%; position:absolute; z-index:8; animation: loo 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes loo{
@@ -27,12 +27,12 @@
 		.line3{display:block; width:100%; position:absolute; z-index:7; animation: lu 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes lu{
 			from{}
-			to{transform:rotate3d(1,1,1,150deg);}
+			to{transform:rotate3d(1,1,1,360deg);}
 		}
 		.line4{display:block; width:100%; position:absolute; z-index:6; animation: lou 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes lou{
 			from{}
-			to{transform:rotate3d(0.5,0.5,0.5,180deg);}
+			to{transform:rotate3d(0.5,0.5,0.5,200deg);}
 		}
 		.main{z-index:1; animation: back 6s infinite linear;}
 		@keyframes back{
@@ -40,7 +40,7 @@
  		50%{opacity: 0.5;}
   		100% {opacity: 1;}
 		}
-		.big{display:block; width:100%; z-index:5; position:absolute; animation:bigger 10s infinite alternate}
+		.big{display:block; position:absolute; width:100%; z-index:5; position:absolute; animation:bigger 6s infinite alternate}
 		@keyframes bigger{
 			from{width:300px; height:10px;}
 			to{width:100%; height:auto;}
