@@ -10,20 +10,25 @@
 		@keyframes lit{
 			to{transform:rotate(360deg);}
 		}
-		.light2{display:block; width:240px; position:absolute; z-index:999; left:200px; animation: lit 10s infinite linear;}
+		.light2{display:block; width:240px; position:absolute; z-index:999; left:200px; animation: lit 5s infinite linear;}
 		@keyframes lit{
 			to{transform:rotate(360deg);}
 		}
-		.line{display:block; width:50%; position:absolute; z-index:999; margin:auto; padding:auto; animation: lo 5s infinite cubic-bezier(.25,1.16,.78,.24);}
+		.line{display:block; width:50%; position:absolute; z-index:50; margin:auto; padding:auto; animation: lo 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes lo{
 			from{}
 			to{transform:rotate3d(0.5,0.5,0.5,150deg);}
 		}
-		.main{animation: back 10s infinite linear;}
+		.main{animation: back 6s infinite linear;}
 		@keyframes back{
  		0% {opacity: 0;}
  		50%{opacity: 0.5;}
   		100% {opacity: 1;}
+		}
+		.big{display:block; width:100px; position:absolute; animation:bigger 3s infinite alternate}
+		@keyframes bigger{
+			from{width:30px; height:10px;}
+			to{width:100px; height:80px;}
 		}
 	</style>
 </head>
@@ -36,7 +41,11 @@
 			<img src="lit-2.png" class="light2">
 		</section>
 		<section>
-			<img src="zhffkwb.jpg" class="main" style="width:50%;">
+			<img src="zhffkwb.jpg" class="main">
+			<img src="lit-4.jpg" class="line">
+		</section>
+		<section>
+			<img src="lit-5" class="big">
 		</section>
 	</div>
 </body>
