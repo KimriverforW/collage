@@ -14,22 +14,22 @@
 		@keyframes lit{
 			to{transform:rotate(360deg);}
 		}
-		.line1{display:block; width:100%; position:absolute; margin:auto; padding:auto; z-index:8;animation: lo 10s infinite cubic-bezier(.25,1.16,.78,.24);}
+		.line1{display:block; width:100%; position:absolute; padding-top:0; z-index:8; animation: lo 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes lo{
 			from{}
 			to{transform:rotate3d(0.5,0.5,0.5,150deg);}
 		}
-		.line2{display:block; width:100%; position:absolute; margin:auto; padding:auto; z-index:8; animation: loo 10s infinite cubic-bezier(.25,1.16,.78,.24);}
+		.line2{display:block; width:100%; position:absolute; z-index:8; animation: loo 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes loo{
 			from{}
 			to{transform:rotate3d(1,0.5,0.5,180deg);}
 		}
-		.line3{display:block; width:100%; position:absolute; margin:auto; padding:auto; z-index:7; animation: lu 10s infinite cubic-bezier(.25,1.16,.78,.24);}
+		.line3{display:block; width:100%; position:absolute; z-index:7; animation: lu 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes lu{
 			from{}
 			to{transform:rotate3d(1,1,1,150deg);}
 		}
-		.line4{display:block; width:100%; position:absolute; margin:auto; padding:auto; z-index:6; animation: lou 10s infinite cubic-bezier(.25,1.16,.78,.24);}
+		.line4{display:block; width:100%; position:absolute; z-index:6; animation: lou 10s infinite cubic-bezier(.25,1.16,.78,.24);}
 		@keyframes lou{
 			from{}
 			to{transform:rotate3d(0.5,0.5,0.5,180deg);}
