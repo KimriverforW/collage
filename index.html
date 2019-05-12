@@ -4,17 +4,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gleaming page</title>
 	<style type="text/css">
-		.wrap{width:100%; color:#A76058; margin:auto;}
-		section{width:60%; margin:auto; background-color:#A76058; padding:auto; padding-top:50px; position:relative;}
-		.light{width:100px; position:absolute; z-index:999; left:800px; animation: lit 30s infinite linear;}
+		.wrap{width:100%; background-color:#A76058; margin:auto;}
+		section{width:60%; margin:auto; padding:auto; padding-top:50px; position:relative; display:block;}
+		.light{width:300px; position:absolute; z-index:999; left:800px; animation: lit 30s infinite linear; display:block;}
 		@keyframes lit{
 			to{transform:rotate(360deg);}
 		}
-		.light2{width:120px; position:absolute; z-index:999; left:200px; animation: lit 10s infinite linear;}
+		.light2{display:block; width:240px; position:absolute; z-index:999; left:200px; animation: lit 10s infinite linear;}
 		@keyframes lit{
 			to{transform:rotate(360deg);}
 		}
-		.main:{animation: back 10s infinite linear;}
+		.line{display:block; width:50%; position:absolute; z-index:999; margin:auto; padding:auto; animation: lo 5s infinite cubic-bezier(.25,1.16,.78,.24);}
+		@keyframes lo{
+			from{}
+			to{transform:rotate3d(0.5,0.5,0.5,150deg);}
+		}
+		.main{animation: back 10s infinite linear;}
 		@keyframes back{
  		0% {opacity: 0;}
  		50%{opacity: 0.5;}
@@ -31,7 +36,7 @@
 			<img src="lit-2.png" class="light2">
 		</section>
 		<section>
-			<img src="zhffkwb.jpg" class="main">
+			<img src="zhffkwb.jpg" class="main" style="width:50%;">
 		</section>
 	</div>
 </body>
